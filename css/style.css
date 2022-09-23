@@ -1,13 +1,82 @@
 .sky {
-	background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=Waxm4BMm&id=72ACA550539AC73A16EE2B1082CB69A6AB039114&thid=OIP.Waxm4BMmTbgF19SfIoOMPAHaEK&mediaurl=https%3a%2f%2fwallpaperboat.com%2fwp-content%2fuploads%2f2020%2f06%2f04%2f43263%2fstars-23.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.59ac66e013264db805d7d49f22838c3c%3frik%3dFJEDq6Zpy4IQKw%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=stars+HD&simid=608012802305766449&FORM=IRPRST&ck=CD8661104FDF037B0B6A17FE1313BB51&selectedIndex=40&ajaxhist=0&ajaxserp=0);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 1000px;
+	
+}
+.border {
+	width: 600px;
+	height: 600px;
+	border: 5px solid black;
+	position: relative;
+	top: 200px;
+	left: 200px;
 }
 .earth {
 	position: absolute;
-	width: 200px;
-	height: 200px;
+	width: 70px;
+	height: 70px;
+	top: 0;
+	left: 0px;
+	transition: 2s all linear;
+	animation: earth  40s infinite;
+}
+.earth:hover {
+	transform: scale(1.5) rotate(90deg);
+}
+
+@keyframes earth {
+	0% {top: 0; left: 0;}
+	20% {top: 400px; left: 0;}
+	40% {top: 400px; left: 400px;}
+	60% {top: 0; left: 400px;}
+	100%{top: 0;}
+}
+
+.moon {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 0;
+	left: 100px;
+	transition: 2s all linear;
+	animation: moon 40s infinite;
+}
+.moon:hover {
+	transform: scale(1.5) rotate(90deg);
+}
+@keyframes moon {
+	0% {top: 0; left: 100;}
+	20% {top: 0; left: 0;}
+	40% {top: 400px; left: 0;}
+	60% {top: 400px; left: 400px;}
+	80% {top: 0; left: 400px;}
+	100%{top: 0;}
+}
+
+.mars {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 0;
+	left: 200px;
+	transition: 2s all linear;
+}
+.mars:hover {
+	transform: scale(1.5) rotate(90deg);
+}
+
+.jupiter {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 0;
+	left: 300px;
+	transition: 2s all linear;
+}
+.jupiter:hover {
+	transform: scale(1.5) rotate(90deg);
+
 }
